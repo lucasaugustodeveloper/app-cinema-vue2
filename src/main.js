@@ -25,7 +25,7 @@ Vue.use(Vuex)
 Vue.use(BlockUI)
 Vue.use(VueI18n)
 
-Vue.http.options.root = 'https://api-cinema-vue.herokuapp.com/api/v1'
+Vue.http.options.root = 'http://apicinema.lucasaugusto.dev.br/api/v1'
 Vue.http.interceptors.push((req, next) => {
   req.headers.set('Authorization', `Bearer ${window.localStorage.getItem('_token')}`)
   next()
