@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "webpack --progress --hide-modules"
+    "build": "./node_modules/.bin/webpack --progress --hide-modules"
   },
   "dependencies": {
     "jwt-decode": "^2.2.0",
